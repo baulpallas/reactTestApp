@@ -1,4 +1,4 @@
-export const State = {
+export const ProductData = {
   products: [
     {
       category: "Sporting Goods",
