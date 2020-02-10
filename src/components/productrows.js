@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Products from "./productdata";
 
 class ProductRows extends Component {
   createTable = () => {

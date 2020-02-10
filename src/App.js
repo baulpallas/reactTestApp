@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import Products from "./components/productdata";
-import ProductRows from "./components/productrows";
-import CategoryRows from "./components/categoryrows";
-import Table from "react-bootstrap/Table";
-import SearchBar from "./components/search";
+
 import Holder from "./components/holder";
+
 class App extends Component {
   state = {
     products: [
@@ -51,12 +48,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Holder products={this.state.products} /> */}
-        <Table>
+        <Holder />
+        {/* <Table>
           <CategoryRows />
           <ProductRows products={this.state.products} />
         </Table>
-        <SearchBar />
+        <SearchBar /> */}
       </div>
     );
   }

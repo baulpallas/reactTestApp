@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import ProductRows from "./productdata";
+import ProductRows from "./productrows";
 import CategoryRows from "./categoryrows";
 import SearchBar from "./search";
 import { Container, Row, Table, Col } from "react-bootstrap";
+import { State } from "./productdata";
 
+console.log(State);
 class Holder extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ class Holder extends Component {
           <Col>
             <Table>
               <CategoryRows />
-              <ProductRows products={this.props.products} />
+              <ProductRows products={State} />
             </Table>
             <SearchBar />
           </Col>
